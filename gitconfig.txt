@@ -5,12 +5,22 @@ git config --global user.email isabelagomesmachado05@gmail.com
 -- Criar um projeto vazio
 npx create-expo-app@latest SilvinhaHealthApp --template blank
 
--- Toda aula ao começar
 cd SilvinhaHealthApp
 
--- bibliotecas
+-- Bibliotecas
 npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
 
--- app.json:
+
+-- app.json adicionar a linha scheme:
 "userInterfaceStyle": "light",
-"scheme": "silvinha-health"
+"scheme": "silvinha-health",
+"splash": 
+
+-- package.json, mudar o main
+"main": "expo-router/entry",
+
+
+-- Restaurar o projeto apos o clone (no terminal)
+cd SilvinhaHealthApp
+npm i
+
