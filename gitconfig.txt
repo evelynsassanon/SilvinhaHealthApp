@@ -1,6 +1,6 @@
 -- Configuração do GIT
-git config --global user.name isassanon
-git config --global user.email isabelagomesmachado05@gmail.com
+git config --global user.name evysassanon
+git config --global user.email boregsevelyn3280@gmail.com
 
 -- Criar um projeto vazio
 npx create-expo-app@latest SilvinhaHealthApp --template blank
